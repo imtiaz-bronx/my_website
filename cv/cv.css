@@ -1,0 +1,161 @@
+:root {
+    --bg-color: #c9cdd2; /* Calm grey desktop background */
+    --paper-white: #ffffff;
+    --text-color: #000000;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    line-height: 1.5;
+    margin: 0;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    /* Add these two lines: */
+    flex-direction: column; 
+    align-items: center;
+    zoom: 125%;
+}
+
+.paper {
+    background-color: var(--paper-white);
+    width: 100%;
+    max-width: 800px; /* Standard letter width */
+    padding: 80px 90px; /* Deep margins like a real document */
+    box-shadow: 0 10px 30px rgba(0, 0, 0.2, 0.5); /* The float effect */
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 30pt;
+    margin: 0 0 5px 0;
+    color:#363434;
+}
+
+header p {
+    text-align: center;
+    font-size: 14pt;
+    margin: 0;
+}
+
+h2 {
+    font-size: 16pt;
+    text-transform: uppercase;
+    border-bottom: 2.1px solid #000; /* Crisp divider line */
+    padding-bottom: 5px;
+    margin: 35px 0 15px 0;
+}
+
+.entry {
+    margin-bottom: 20px;
+}
+
+/* This row pushes the title left and the date right automatically */
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 11pt;
+}
+
+p {
+    font-size: 11.5pt;
+    margin: 0 0 8px 0;
+    text-align:left; 
+}
+
+/* Container to align the button to the right side of the paper */
+.download-container {
+    width: 100%;
+    max-width: 800px;
+    text-align: right; 
+    margin-top: 20px;
+}
+
+/* The Button Styling */
+.download-btn {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 10pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    transition: background-color 0.2s ease;
+}
+
+a {
+    color:rgb(36, 77, 189);
+    text-decoration: none;
+}
+
+.download-btn:hover {
+    background-color: #444; /* Slightly lighter black on hover */
+}
+
+/* Ensures the button disappears if someone hits Cmd+P / Ctrl+P */
+@media print {
+    .download-container {
+        display: none;
+    }
+}
+
+
+/* =========================================
+   MOBILE OPTIMIZATION (Screens under 600px)
+   ========================================= */
+@media (max-width: 600px) {
+    body {
+        padding: 5px 5px; /* Reduces the grey background gap at the top */
+    }
+
+    .paper {
+        padding: 5px 5px; /* Dramatically reduces inside margins so text has room to breathe */
+    }
+
+    h1 {
+        font-size: 22pt; /* Scales down the main name */
+    }
+
+    header p {
+        font-size: 11pt; /* Shrinks contact info so it doesn't awkwardly break into 3 lines */
+    }
+
+    h2 {
+        font-size: 12pt; /* Slightly smaller section headers */
+        margin: 25px 0 10px 0; 
+    }
+
+    /* Fixes the "Title / Date" crash on small screens */
+    .row {
+        flex-direction: column; /* Stacks the date underneath the title instead of side-by-side */
+        margin-bottom: 8px;
+    }
+
+    .row span {
+        color: #555; /* Makes the date slightly grey so it visually separates from the bold title */
+        font-size: 10pt;
+        margin-top: 2px;
+    }
+
+    /* Optimizes the button for thumbs */
+    .download-container {
+        text-align: center; /* Centers the button on mobile */
+    }
+
+    .download-btn {
+        width: 100%; /* Makes the button span the full width of the screen for an easy tap */
+        box-sizing: border-box;
+    }
+}
+

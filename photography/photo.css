@@ -1,0 +1,23 @@
+:root{
+    font-family:"Inter", sans-serif;
+}
+body{
+    font-family: "Inter", sans-serif;
+    background-color: whitesmoke;
+    font-size: 1.1rem;
+
+    margin: 0 3.5%;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex:1;
+}
+h1{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: rgb(213, 10, 10);
+    margin-bottom:5px 
+}
