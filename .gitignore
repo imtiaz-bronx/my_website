@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+
+# VS Code / VSCodium
+.vscode/
+
+# Temporary files
+*.swp
+*~
+
+# Logs
+*.log
