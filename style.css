@@ -38,25 +38,67 @@ p{
 }
 
 
-nav ul{
+/* =========================
+   Top Navigation
+========================= */
+
+.top-nav ul{
     display: flex;
-    gap:8px;
+    gap: 25px;
     list-style: none;
+    margin: 10px 0 20px;
     padding: 0;
-    margin-top:2px;
-    margin-bottom: 5px;
 }
+
+
+/* =========================
+   Shared Navigation Links
+========================= */
 
 nav a{
     color: rgb(6, 50, 145);
-    text-decoration:underline;
-    margin-right: 20px;
-    font-weight: 500;
+    text-decoration: underline;
     font-size: 1.5rem;
+    font-weight: 500;
 }
 
 nav a:hover{
     color: rgb(187, 21, 21);
+}
+
+
+/* =========================
+   Main Page Layout
+========================= */
+
+.container{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+
+/* =========================
+   Left Sidebar Navigation
+========================= */
+
+.left-nav{
+    width: 220px;
+    border: 2px solid black;
+    padding: 1px;
+    background-color: white;
+    margin-top: 16px;
+}
+
+.left-nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.left-nav li{
+    margin-bottom: 12px;
 }
 
 footer{
