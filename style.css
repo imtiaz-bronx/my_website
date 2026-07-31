@@ -44,16 +44,17 @@ nav a:hover {
 }
 
 .widget nav.right a {
-    color: #000000;
+    color: rgb(37, 11, 207);
     text-decoration: none;
-    font-size: 1rem;
-    padding: 8px 12px;
-    background-color: #6d4b4b7f;
-    transition: background-color .5s ease;
+    border: 2px solid rgb(18, 19, 19);
+    width:max-content;
+    padding: 4px;
+    background-color: rgba(128, 128, 128, 0.54);
 }
 
 .widget nav.right a:hover {
-    background-color: #0dc910;
+    color:rgb(8, 234, 8);
+    background-color: rgba(0, 0, 255, 0.419);
 }
 
 main{
