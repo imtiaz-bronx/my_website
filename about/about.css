@@ -13,6 +13,48 @@ body{
     display: flex;
     flex-direction: column;
 }
+nav{
+    display: flex;
+    gap: 2rem;
+    margin-top: 5px;
+    margin-left: 0;
+    border-bottom: 2px solid black;
+    padding-bottom: 15px;
+}
+nav a{
+    border: 2px solid rgb(133, 42, 145);
+    width:max-content;
+    padding: 4px;
+    background-color: rgba(194, 19, 19, 0.153);
+    border-radius: 15px;
+
+}
+
+nav a:hover {
+    color:rgba(8, 234, 8, 0.558);
+    background-color: rgba(0, 0, 255, 0.548);
+
+}
+
+
+main{
+    display: grid;
+}
+article{
+ font-size: 1.2rem;
+ margin-top: 10px;
+}
+
+article img {
+    float: right;            /* Pushes image to the right and wraps text around it */
+    max-width: 35%;          /* Prevents image from taking up too much horizontal space */
+    height: auto;            /* Keeps image proportions crisp */
+    margin-left: 20px;       /* Adds space between the text and the left edge of image */
+    margin-bottom: 15px;     /* Adds space below the image */
+    border-radius: 8px;      /* Optional: rounds image corners slightly */
+}
+
+
 h1{
     font-family: "Comic Sans MS", cursive, sans-serif;
     color: rgb(213, 10, 10);
@@ -27,9 +69,32 @@ h2{
 }
 
 p{
-    color:rgb(37, 1, 3);
-    font-size: 1.5rem;
+    color:rgb(0, 0, 0);
+    font-size: 1.2rem;
     line-height: 1.3;
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
+}
+
+footer{
+    margin-top:50px;
+    font-size:1rem;
+    color:rgb(2, 0, 0);
+    padding: 8px;
+    text-align: right;
+}
+/* The logo on the top with link */
+
+.icon-link {
+    display: inline-flex;
+    align-items: center; /* Aligns icon vertically with text */
+    gap: 8px;            /* Space between image and text */
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.link-icon {
+    width: 34px;          /* Shrinks 64px image to fit text height cleanly */
+    height: auto;
+  /* Keeps image proportions crisp */
 }
