@@ -13,9 +13,68 @@ body{
     display: flex;
     flex-direction: column;
 }
-main{
-    flex:1;
+nav{
+    display: flex;
+    gap: 1rem;
+    text-align:left;
+    font-size:larger;
+    margin: 10px;
+    margin-left: 0;
+    
 }
+nav a{
+    color: rgb(37, 11, 207);
+    text-decoration: none;
+    border: 2px solid rgb(18, 19, 19);
+    width:max-content;
+    padding: 4px;
+    background-color: rgba(128, 128, 128, 0.54);
+}
+
+nav a:hover {
+    color:rgb(8, 234, 8);
+    background-color: rgba(0, 0, 255, 0.419);
+
+}
+.widget nav.right {
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    padding: 5px;
+}
+
+.widget nav.right a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 12px;
+    background-color: #6d4b4b7f;
+    transition: background-color .5s ease;
+}
+
+.widget nav.right a:hover {
+    background-color: #0dc910;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 30px;
+}
+article{
+    border-right: 2px solid black;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+aside img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 h1{
     font-family: "Comic Sans MS", cursive, sans-serif;
     color: rgb(213, 10, 10);
@@ -35,70 +94,6 @@ p{
     line-height: 1.3;
     margin-top: 0.6rem;
     margin-bottom: 0.6rem;
-}
-
-
-/* =========================
-   Top Navigation
-========================= */
-
-.top-nav ul{
-    display: flex;
-    gap: 25px;
-    list-style: none;
-    margin: 10px 0 20px;
-    padding: 0;
-}
-
-
-/* =========================
-   Shared Navigation Links
-========================= */
-
-nav a{
-    color: rgb(6, 50, 145);
-    text-decoration: underline;
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-
-nav a:hover{
-    color: rgb(187, 21, 21);
-}
-
-
-/* =========================
-   Main Page Layout
-========================= */
-
-.container{
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
-}
-
-
-/* =========================
-   Left Sidebar Navigation
-========================= */
-
-.left-nav{
-    width: 220px;
-    border: 2px solid black;
-    padding: 1px;
-    background-color: white;
-    margin-top: 16px;
-}
-
-.left-nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.left-nav li{
-    margin-bottom: 12px;
 }
 
 footer{
